@@ -11,10 +11,6 @@ router.post('/', postLivro)
 
 router.patch('/:id', patchLivro)
 
-router.patch('/', (req, res) => {
-    res.send('Você fez uma requisição do tipo PATCH')
-})
-
 router.delete('/:id', deleteLivro)
 
 module.exports = router
